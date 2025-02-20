@@ -1,0 +1,21 @@
+general:
+    daemon: false
+    sleep: 900
+    state_path: state.db
+
+credentials:
+  - name: virustotal-auth
+    api_key: 228fccc5588007b6f344e216d1b0b3ccf5d051fdddd80318915c2db6c4af69b7
+
+sources:  
+  - name: csv
+    module: csv
+    url: 'https://threatfox.abuse.ch/export/csv/ip-port/recent/'
+    ioc_field: 3
+    
+
+operators:
+  - name: mycsv
+    module: csv
+    filename: csvoutput.csv
+
