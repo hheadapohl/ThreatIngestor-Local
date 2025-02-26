@@ -11,7 +11,7 @@ sources:
   - name: csv
     module: csv
     url: 'https://threatfox.abuse.ch/export/csv/ip-port/recent/'
-    ioc_field: 3
+    ioc_field: 2
     
 
 operators:
